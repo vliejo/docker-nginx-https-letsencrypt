@@ -1,0 +1,8 @@
+# Template for NGINX https site
+[template]
+src  = "nginx_secure.conf.tmpl"
+dest = "/etc/nginx/conf.d/secure.conf"
+keys = [
+    "/secure/domain/name"
+]
+reload_cmd = "/usr/sbin/nginx -s reload"
